@@ -4,7 +4,7 @@
  * AbstractClassクラスに相当する
  */
 
-abstract class AbstractDispaly
+abstract class AbstractDisplay
 {
 
     /**
@@ -34,7 +34,7 @@ abstract class AbstractDispaly
     {
         $this->displayHeader();
         $this->displayBody();
-        $this->displayFotter();
+        $this->displayFooter();
     }
 
 
@@ -47,15 +47,24 @@ abstract class AbstractDispaly
     }
 
 
+    /**
+    * ヘッダを表示する
+    * サブクラスに実装を持たせる抽象メソッド
+    */
+    protected abstract function displayHeader();
 
 
+    /**
+    * ボディ(クライアントから渡された内容)を表示する
+    * サブクラスに実装を持たせる抽象メソッド
+    */
+    protected abstract function displayBody();
 
 
-
-
-
-
-
-
+    /**
+    * フッタを表示する
+    * サブクラスに実装を持たせる抽象メソッド
+    */
+    protected abstract function displayFooter();
 
 }
