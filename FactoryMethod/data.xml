@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<farmers>
+  <farmer name="田中">
+    <product name="おこめ" />
+  </farmer>
+  <farmer name="花田">
+    <product name="とまと" />
+  </farmer>
+  <farmer name="花田">
+    <product name="おくら" />
+  </farmer>
+  <farmer name="佐藤">
+    <product name="おいも" />
+  </farmer>
+</farmers>
