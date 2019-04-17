@@ -14,18 +14,41 @@ function globalScopeTest()
     $val = (int) 2;
 }
 
+function globalScopeTest2()
+{
+    global $val;
+    return $val;
+}
+
 echo "そのまま<br/>";
-echo $val;
+echo $val; //1
 echo "<hr/>";
+
 
 echo "ローカルスコープテスト 変わらず1のままのはず<br/>";
 localScopeTest();
-echo $val;
+echo $val; //1
 echo "<hr/>";
 
 echo "グローバルスコープテスト 2に変わるはず<br/>";
 globalScopeTest();
-echo $val;
+echo $val; //2
+echo "<hr/>";
+
+
+echo "グローバル変数の危険性<br/>";
+echo globalScopeTest2(); // 2
+echo "<hr/>";
+
+$val = 9;
+echo globalScopeTest2(); //9
+echo "<hr/>";
+
+
+
+
+
+
 
 
 
