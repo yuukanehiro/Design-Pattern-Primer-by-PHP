@@ -20,6 +20,13 @@ function globalScopeTest2()
     return $val;
 }
 
+function globalScopeTest3()
+{
+    return $val;
+}
+
+
+/////////////////////////////////////////////////////
 echo "そのまま<br/>";
 echo $val; //1
 echo "<hr/>";
@@ -45,6 +52,8 @@ echo globalScopeTest2(); //9
 echo "<hr/>";
 
 
+echo "グローバル変数を関数で扱うには関数内でグローバル宣言しなくてはならない<br/>";
+echo globalScopeTest3(); // 出力されない
 
 
 
