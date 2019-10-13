@@ -1,0 +1,1 @@
+<h1>This is sample of Bridge pattern !</h1>
